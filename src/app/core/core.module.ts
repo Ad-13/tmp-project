@@ -2,6 +2,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { CoreRoutingModule } from './core-routing.module';
 
@@ -10,7 +12,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-// import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -25,7 +26,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
   imports: [
     CommonModule,
     BrowserAnimationsModule,
-    CoreRoutingModule
+    CoreRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     RouterModule,
