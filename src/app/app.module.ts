@@ -1,10 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
-import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { InputTextModule } from 'primeng/inputtext';
+import { CoreModule } from './core/core.module';
 
 import { AppComponent } from './app.component';
 
@@ -14,10 +11,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    InputTextModule,
-    MultiSelectModule
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
