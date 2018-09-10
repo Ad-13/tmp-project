@@ -1,1 +1,14 @@
 /* **************** SHARED ****************** */
+html, body, .root {
+  min-height: 100vh;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  padding: 10px 25px;
+}
