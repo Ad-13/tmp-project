@@ -1,26 +1,26 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {FormsModule} from '@angular/forms';
-import {RouterModule} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 /*--- PrimeNg lib ---*/
 import {
-  PrimeNgModule
-} from './primeNg/primeNg.module';
+  MultiSelectModule
+} from 'primeng/multiselect';
 
 
 @NgModule({
   imports: [
-    PrimeNgModule,
+    MultiSelectModule,
     RouterModule,
     CommonModule,
-    FormsModule,
+    FormsModule
   ],
   exports: [
-    PrimeNgModule,
+    MultiSelectModule,
     RouterModule,
     CommonModule,
-    FormsModule,
+    FormsModule
   ]
 })
 
