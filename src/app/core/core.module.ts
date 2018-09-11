@@ -1,4 +1,4 @@
-/*--- imports ---*/
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
@@ -14,7 +14,6 @@ import { HeaderComponent } from './base-layout/header/header.component';
 import { FooterComponent } from './base-layout/footer/footer.component';
 import { NotFoundComponent } from '../pages/not-found/not-found.component';
 import { HomePageComponent } from '../pages/home-page/home-page.component';
-/*--- end imports ---*/
 
 @NgModule({
   declarations: [
