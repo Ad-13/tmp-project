@@ -1,3 +1,4 @@
+/*--- imports ---*/
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
@@ -9,20 +10,17 @@ import { CoreRoutingModule } from './core-routing.module';
 
 import { throwIfAlreadyLoaded } from './guards/module-import.guard';
 
-import { HomePageComponent } from './home-page/home-page.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-
-
+import { HeaderComponent } from './base-layout/header/header.component';
+import { FooterComponent } from './base-layout/footer/footer.component';
+import { NotFoundComponent } from '../pages/not-found/not-found.component';
+import { HomePageComponent } from '../pages/home-page/home-page.component';
+/*--- end imports ---*/
 
 @NgModule({
   declarations: [
-    HomePageComponent,
     HeaderComponent,
     FooterComponent,
-    LoginComponent,
+    HomePageComponent,
     NotFoundComponent
   ],
   imports: [
@@ -35,7 +33,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   exports: [
     RouterModule,
-    HomePageComponent,
     HeaderComponent,
     FooterComponent
   ],
