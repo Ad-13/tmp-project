@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { NotFoundComponent } from '../pages/not-found/not-found.component';
 import { HomePageComponent } from '../pages/home-page/home-page.component';
-// import { AuthGuardService } from './services/auth-guard.service';
 
 const routes: Routes = [
   {
@@ -22,20 +21,7 @@ const routes: Routes = [
   {
     path: '**',
     component: NotFoundComponent
-  },
-  /*     {
-          path: 'admin',
-          canActivate: [AuthGuardService],
-          loadChildren: '../admin/admin.module#AdminModule'
-      },
-      {
-          path: 'form',
-          loadChildren: '../form/form.module#FormModule'
-      },
-      {
-          path: '**',
-          component: NotFoundComponent
-      } */
+  }
 ];
 
 @NgModule({

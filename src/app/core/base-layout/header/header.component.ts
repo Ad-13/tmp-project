@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
     selector: 'idc-header',
@@ -8,13 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-    constructor(/* private authentication: AuthenticationService */) { }
+    constructor() { }
 
     ngOnInit() {
     }
-
-    /* logout() {
-        this.authentication.logout();
-    } */
-
 }

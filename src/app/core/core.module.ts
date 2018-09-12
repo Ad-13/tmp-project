@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { CoreRoutingModule } from './core-routing.module';
 
@@ -26,9 +25,7 @@ import { HomePageComponent } from '../pages/home-page/home-page.component';
     CommonModule,
     BrowserAnimationsModule,
     CoreRoutingModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule
+    HttpClientModule
   ],
   exports: [
     RouterModule,
@@ -36,8 +33,6 @@ import { HomePageComponent } from '../pages/home-page/home-page.component';
     FooterComponent
   ],
   providers: [
-    /* AuthenticationService,
-    AuthGuardService */
   ]
 })
 export class CoreModule {
